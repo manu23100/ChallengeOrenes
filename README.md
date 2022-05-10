@@ -46,4 +46,4 @@ Mediante el comando **dotnet ef migrations add migrationName** añadiremos una n
 Seguidamente, haremos uso del comando **dotnet ef database update** para actualizar la bbdd con la migración que acabamos de generar.
 
 De ésta manera ya tendremos la base de datos generada. El siguiente y último paso será acceder a la API, mediante la dirección https://localhost:7135 .
-Una vez accedamos, podemos ver que la aplicación proporciona una interfaz con las operaciones disponibles desde la API, para cada una de las entidades modeladas.
+Una vez ejecutemos la aplicación, podemos ver que se proporciona una interfaz con las operaciones disponibles desde la API, para cada una de las entidades modeladas.
