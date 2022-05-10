@@ -27,7 +27,7 @@ namespace ChallengeOrenes.Controllers
 
 
 
-        // GET: api/Vehicles
+       
         [HttpGet]
         public List<VehicleDTO> vehicles()
         {
@@ -36,7 +36,7 @@ namespace ChallengeOrenes.Controllers
 
         
         [HttpGet("locationHistory/{id}")]
-        public ActionResult<List<LocationDTO>> locationHistory(int id)
+        public ActionResult<List<LocationDTO>> locationsHistory(int id)
         {
             var r = _vehicleService.getLocations(id);
 
@@ -64,8 +64,7 @@ namespace ChallengeOrenes.Controllers
         }
 
         
-        // POST: api/Vehicles
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPost]
         public ActionResult<VehicleDTO>  insert(VehicleChildDTO vehicle)
         {

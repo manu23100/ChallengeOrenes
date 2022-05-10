@@ -29,14 +29,14 @@ namespace ChallengeOrenes.Controllers
 
 
 
-        // GET: api/Locations
+   
         [HttpGet]
         public List<LocationDTO>  locations()
         {
             return _locationService.getAll();
         }
 
-        // GET: api/Locations/5
+  
         [HttpGet("{id}")]
         public ActionResult<LocationDTO> GetLocation(int id)
         {
@@ -52,8 +52,7 @@ namespace ChallengeOrenes.Controllers
 
         
 
-        // POST: api/Locations
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+       
         [HttpPost]
         public ActionResult<LocationDTO> newLocation(LocationDTO location)
         {

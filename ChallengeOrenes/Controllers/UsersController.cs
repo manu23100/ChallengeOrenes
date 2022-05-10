@@ -29,7 +29,7 @@ namespace ChallengeOrenes.Controllers
             _vehicleService = vehicleService;
         }
 
-        // GET: api/Users
+        
         [HttpGet]
         public List<UserDTO> users()
         {
@@ -37,7 +37,7 @@ namespace ChallengeOrenes.Controllers
         }
 
         
-        // GET: api/Users/5
+       
         [HttpGet("{id}")]
         public ActionResult<UserDTO> GetUser(int id)
         {
@@ -55,8 +55,7 @@ namespace ChallengeOrenes.Controllers
 
 
         
-        // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPost]
         public ActionResult<UserDTO> newUser(UserChildDTO user)
         {

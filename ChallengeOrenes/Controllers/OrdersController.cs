@@ -31,14 +31,14 @@ namespace ChallengeOrenes.Controllers
         }
 
 
-        // GET: api/Orders
+       
         [HttpGet]
         public List<OrderDTO>  allOrders()
         {
             return _orderService.getAll();
         }
 
-        // GET: api/Orders/5
+       
         [HttpGet("{id}")]
         public  ActionResult<OrderDTO> GetOrder(int id)
         {
@@ -69,8 +69,7 @@ namespace ChallengeOrenes.Controllers
 
 
      
-        // POST: api/Orders
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPost]
         public ActionResult<OrderDTO> newOrder(OrderDTO order)
         {
